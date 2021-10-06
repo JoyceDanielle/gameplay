@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View, Image, StatusBar } from 'react-native';
+import {Text, View, Image } from 'react-native';
 import { styles } from './styles';
 
 import Illustration from '../../assets/illustration.png';
@@ -10,17 +10,11 @@ export function SignIn() {
   return (
     <View style={styles.container}>
 
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor= 'transparent'
-        translucent
-      />
-
       <Image  source={Illustration} style={styles.image} resizeMode='stretch'/>
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize {`\n`} suas jogatinas {`\n`} facilmente
+          Conecte-se {`\n`} e organize suas {`\n`} jogatinas
         </Text>
 
         <Text style={styles.subtitle}>
